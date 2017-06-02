@@ -1,0 +1,44 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "94C612786C846028BBEF90E8972720B4F6BE276F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "80B936427369FFA81FF455C47D8F0081CE6A6D40" : 9223372036854775807,
+    "7A36915AA5926F7389F8263588CA5C42758174A7" : 9223372036854775807,
+    "94C612786C846028BBEF90E8972720B4F6BE276F" : 9223372036854775807,
+    "192954AA2D7BE27B4987122170CF25EA074B7FB8" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "171A4D81-DFFC-47A0-B1BE-2889A0D91A46",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "80B936427369FFA81FF455C47D8F0081CE6A6D40" : "iOS-MVVM-PlayGround\/vendor\/iOS-JVWebview\/",
+    "7A36915AA5926F7389F8263588CA5C42758174A7" : "iOS-MVVM-PlayGround\/vendor\/iOS-JVUtil\/",
+    "94C612786C846028BBEF90E8972720B4F6BE276F" : "iOS-MVVM-PlayGround\/",
+    "192954AA2D7BE27B4987122170CF25EA074B7FB8" : "iOS-MVVM-PlayGround\/vendor\/iOS-JVNetwork\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "mvvm-playground",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "mvvm-playground.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/randoll127\/iOS-JV-Network.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "192954AA2D7BE27B4987122170CF25EA074B7FB8"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/randoll127\/iOS-JV-Util.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "7A36915AA5926F7389F8263588CA5C42758174A7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/randoll127\/iOS-JVWebview.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "80B936427369FFA81FF455C47D8F0081CE6A6D40"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/randoll127\/iOS-MVVM-PlayGround.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "94C612786C846028BBEF90E8972720B4F6BE276F"
+    }
+  ]
+}
