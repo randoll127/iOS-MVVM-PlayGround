@@ -1,6 +1,7 @@
 #import "ResUpdateApi.h"
 #import <JVUtil.h>
 #import "LuRequestModel.h"
+#import <ReactiveCocoa.h>
 @interface ResUpdateApi() <JVRequestProtocol>
 @end
 
@@ -10,12 +11,13 @@
     id body;
     NSString* method;
     ApiSecurityPolicy security;
+
 }
 
 -(NSString*)requestUrl{
     return @"http://i.lu.com:3001/mc/api/test";
 }
--(Class)responseModel{
++(Class)responseModel{
     return [LuRequestModel class];
 }
 
@@ -23,7 +25,7 @@
 -(void)success:(NSURLResponse*) response responseObject:(id)responseObject{
     LOG(DATA_TO_STRING(responseObject));
     NSError* error;
-    LuRequestModel* model = [[[self responseModel] alloc] initWithData:responseObject error:&error];
+    LuRequestModel* model = [[[ResUpdateApi responseModel] alloc] initWithData:responseObject error:&error];
     if(!error){
         LOG(model);
     }
@@ -39,6 +41,7 @@
 
 -(instancetype)body:(id)__body{
     body = __body;
+
     return self;
 }
 
@@ -57,5 +60,5 @@
    
 }
 
-DEALLOC_LOG
+
 @end

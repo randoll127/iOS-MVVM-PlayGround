@@ -10,7 +10,11 @@
 #import <CommonCrypto/CommonDigest.h>
 #import <JVNetwork.h>
 #import "ResUpdateApi.h"
-@interface ViewController ()
+#import "ResUpdateApi2.h"
+@interface ViewController (){
+    ResUpdateApi* api1;
+    ResUpdateApi2* api2;
+}
 
 @end
 
@@ -19,7 +23,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor=[UIColor redColor];
-    [[ResUpdateApi new] request];
+    api1 = [ResUpdateApi new];
+    api2 = [ResUpdateApi2 new];
+    
+    RACSignal* signals = [api2.signal then:^RACSignal *{
+        return api1.signal;
+    }];
+    [signals subscribeNext:^(id x){
+                NSLog(@"%@",x);
+            }];
+    
+    [api2 request:^(id x){
+        NSLog(@"%@",x);
+    }];
+//
+//    [[ResUpdateApi2 new] request:^(id x){
+//        NSLog(@"%@",x);
+//    }];
     
 }
 

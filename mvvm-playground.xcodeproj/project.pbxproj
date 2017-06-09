@@ -15,6 +15,7 @@
 		EC0E19611E8CAD4D002B50F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC0E19601E8CAD4D002B50F9 /* Assets.xcassets */; };
 		EC0E19641E8CAD4D002B50F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC0E19621E8CAD4D002B50F9 /* LaunchScreen.storyboard */; };
 		EC44A42F1EE14D6B0076DAB3 /* libcasterModel.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC8ADB021EAF4E150061D917 /* libcasterModel.a */; };
+		EC731E4E1EEA8A2200843241 /* ResUpdateApi2.m in Sources */ = {isa = PBXBuildFile; fileRef = EC731E4D1EEA8A2200843241 /* ResUpdateApi2.m */; };
 		ECBE7B7B1EDED2C4006E538B /* JVNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC621E401ED983B0009958D0 /* JVNetwork.framework */; };
 		FAA23B1ECB8C22CF2D1BC2E7 /* libPods-mvvm-playground.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C640D4DB97D1B9EF93741B22 /* libPods-mvvm-playground.a */; };
 /* End PBXBuildFile section */
@@ -36,6 +37,8 @@
 		EC0E19631E8CAD4D002B50F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC0E19651E8CAD4D002B50F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC621E401ED983B0009958D0 /* JVNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JVNetwork.framework; path = "../../Library/Developer/Xcode/DerivedData/mvvm-playground-hhtivhdojvaumqdratskcccniwvo/Build/Products/Debug-iphonesimulator/JVNetwork.framework"; sourceTree = "<group>"; };
+		EC731E4C1EEA8A2200843241 /* ResUpdateApi2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResUpdateApi2.h; sourceTree = "<group>"; };
+		EC731E4D1EEA8A2200843241 /* ResUpdateApi2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResUpdateApi2.m; sourceTree = "<group>"; };
 		EC8ADB021EAF4E150061D917 /* libcasterModel.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcasterModel.a; path = "../../Library/Developer/Xcode/DerivedData/mvvm-playground-hhtivhdojvaumqdratskcccniwvo/Build/Products/Debug-iphonesimulator/libcasterModel.a"; sourceTree = "<group>"; };
 		ECBE7B611EDEA595006E538B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -94,6 +97,7 @@
 		EC0E19531E8CAD4D002B50F9 /* mvvm-playground */ = {
 			isa = PBXGroup;
 			children = (
+				EC731E4B1EEA89F300843241 /* api-test */,
 				EC0E19571E8CAD4D002B50F9 /* AppDelegate.h */,
 				EC0E19581E8CAD4D002B50F9 /* AppDelegate.m */,
 				EC0E195A1E8CAD4D002B50F9 /* ViewController.h */,
@@ -103,8 +107,6 @@
 				EC0E19621E8CAD4D002B50F9 /* LaunchScreen.storyboard */,
 				EC0E19651E8CAD4D002B50F9 /* Info.plist */,
 				EC0E19541E8CAD4D002B50F9 /* Supporting Files */,
-				EC0469681ED7FFEE00777672 /* ResUpdateApi.h */,
-				EC0469691ED7FFEE00777672 /* ResUpdateApi.m */,
 			);
 			path = "mvvm-playground";
 			sourceTree = "<group>";
@@ -116,6 +118,17 @@
 				EC0E19551E8CAD4D002B50F9 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC731E4B1EEA89F300843241 /* api-test */ = {
+			isa = PBXGroup;
+			children = (
+				EC0469681ED7FFEE00777672 /* ResUpdateApi.h */,
+				EC0469691ED7FFEE00777672 /* ResUpdateApi.m */,
+				EC731E4C1EEA8A2200843241 /* ResUpdateApi2.h */,
+				EC731E4D1EEA8A2200843241 /* ResUpdateApi2.m */,
+			);
+			name = "api-test";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -242,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC04696A1ED7FFEE00777672 /* ResUpdateApi.m in Sources */,
+				EC731E4E1EEA8A2200843241 /* ResUpdateApi2.m in Sources */,
 				EC0E195C1E8CAD4D002B50F9 /* ViewController.m in Sources */,
 				EC0E19591E8CAD4D002B50F9 /* AppDelegate.m in Sources */,
 				EC0E19561E8CAD4D002B50F9 /* main.m in Sources */,
